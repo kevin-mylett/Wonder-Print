@@ -1,0 +1,119 @@
+
+/* Cart Table */
+
+.woocommerce a.remove {
+	color: $stripe-4 !important;
+
+	&:hover, &:focus {
+		color: #fff;
+		background-color: $stripe-4;
+	}
+}
+
+.woocommerce table.cart {
+
+	th {
+	text-transform: uppercase;
+	font-weight: normal;
+	background-color: #111;
+	}
+
+	tr:nth-child(even) {
+		background-color: #111;
+	}
+
+	tr:last-child {
+		background-color: transparent;
+	}
+
+	td {
+		padding: 30px 12px;
+	}
+
+	td.product-price, td.product-subtotal {
+		font-size: 1.1em;
+	}
+
+	img {
+		width: 96px;
+	}
+}
+
+.woocommerce td.product-name {
+
+	p {
+		font-size: 1em;
+		line-height: 1.42857;
+		letter-spacing: .5px;
+	}
+
+	a {
+		font-size: 1.2em;
+	}
+
+	dl.variation dd {
+		margin-bottom: 0;
+	}
+}
+
+/* Cart Action Buttons - Coupon Code & Update Basket*/
+
+.woocommerce table.cart td.actions {
+	padding-top: 50px;
+
+	.coupon .input-text {
+		border: 1px transparent;
+		height: 35px;
+		width: 45%;
+		font-size: 0.9em;
+		text-align: center;
+
+		&:focus {
+			border: 1px solid $stripe-5;
+		}
+	}
+}
+
+/* Cart Totals */
+.woocommerce-cart .cart-collaterals .cart_totals {
+	text-align: right;
+	border-top: 1px solid #333;
+	padding: 10px;
+	margin: 20px 0px;
+	letter-spacing: 1px;
+
+	h2 {	
+		margin-bottom: 40px;
+	}
+
+	tr {
+		text-align: right;
+		font-size: 1.15em;
+
+		th {
+			text-transform: uppercase;
+			text-align: right;
+			border-top: 0;
+			font-weight: normal;
+			padding-bottom: 15px;
+		}
+
+		td {
+			border-top: 0px;
+			padding-bottom: 15px;
+		}
+	}
+
+	tr.order-total {
+		font-size: 1.5em;
+
+		th, td {
+			background-color: $primary-color;
+			font-weight: bold;
+		}
+	}
+
+	tr.tax-rate th, tr.tax-rate td {
+		padding-bottom: 30px;
+	}
+}

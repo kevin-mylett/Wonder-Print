@@ -1,0 +1,83 @@
+body {
+	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+@media only screen and (min-width : 481px) {
+   .row.is-flex {
+	 display: flex;
+	 flex-wrap: wrap;
+   }
+   .row.is.flex > [class*='col-'] {
+	 display: flex;
+	 flex-direction: column;
+   }
+  .row.is-flex:after, 
+  .row.is-flex:before {
+	 display: flex;
+  }
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+	line-height: 2em;
+	font-size: 1.18em;
+	letter-spacing: 0.01em;
+	margin: 0px 0px 30px;
+}
+
+img {
+	@include img-responsive;
+}
+
+ h1.page-title {
+	font-family: 'Pacifico', sans-serif;
+	text-align: center;
+	color: $primary-color;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	color: $primary-color;
+	margin-bottom: 20px;
+}
+
+.center-block {
+	float: none !important;
+}
+
+.divider {
+	content: "";
+	background-color: #333;
+	width: 20%;
+	height: 1px;
+	display: block;
+	position: relative;
+	margin-top: .8em;
+}
+
+.policy-subhead {
+	text-align: center;
+	font-weight: bold;
+}
+
+button, input, optgroup, select, textarea {
+	background-color: #222;
+	border: 0px;
+	color: #c0c0c0;
+	padding: 5px;
+	font-size: 0.9em;
+}
+
+.panel {
+	background-color: transparent;
+}
+
+label {
+	font-weight: normal;
+}

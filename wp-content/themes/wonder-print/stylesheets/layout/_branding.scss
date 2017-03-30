@@ -1,0 +1,11 @@
+/*Branding Stripes */
+
+.branding {
+	@include make-sm-column(1);
+	@include make-sm-column-pull(11);
+	@extend .hidden-xs;
+    background-image: url(img/stripes7px.png);
+    background-repeat: repeat-y;
+    background-position: 5% 50%;
+}
+

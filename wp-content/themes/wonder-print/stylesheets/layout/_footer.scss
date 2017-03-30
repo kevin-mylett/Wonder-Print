@@ -1,0 +1,103 @@
+/*Footer*/
+
+.site-footer {
+	background-color: $primary-color;
+	color: #fff;
+	padding-top: 30px;
+	font-size: 1.11em;
+
+	a {
+		color: #fff;
+	}
+}
+
+.site-footer-inner {
+	@include make-row();
+	padding-bottom: 25px;
+}
+
+.footer-heading, .widget-title {
+	font-family: 'Helvetica Neue', sans-serif;
+	color: $dark-primary;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 25px 0px;
+}
+
+.contact-list {
+	padding-left: 0px;
+	@media(max-width:767px) {
+			text-align: center;
+		}
+
+	li {
+		list-style: none;
+		margin: 15px 0px;
+
+		span {
+			color: $dark-primary;
+		}
+	}
+}
+
+.footer-contact, .footer-help, .footer-categories, .footer-twitter {
+	@include make-sm-column(3);
+}
+
+.help-links, .product-categories {
+	padding-left: 0px;
+	line-height: 1.8;
+
+	li {
+		list-style: none;
+		text-align: center;
+	}
+}
+
+
+/*Site Info*/
+
+.site-info {
+	background-color: #2e2e2e;
+	color: #fff;
+}
+
+.site-info-content {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+
+	p {
+		font-size: 12px;
+		color: #777;
+		margin: 0px;
+		text-align: center;
+	}
+}
+
+.copyright {
+	@include make-sm-column(4);
+}
+
+.card-icons {
+	@include make-sm-column(4);
+
+	img {
+		@extend .img-responsive;
+		@media(max-width:767px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+}
+
+.credits {
+	@include make-sm-column(4);
+
+	a {
+		color: inherit;
+	}
+}
+

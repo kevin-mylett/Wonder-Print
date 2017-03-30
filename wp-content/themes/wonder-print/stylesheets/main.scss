@@ -1,0 +1,47 @@
+/*
+ Theme Name:   Wonder-Print
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  wonder-print. A child theme of _tk.
+ Author:       Kevin Mylett @ 99pixels
+ Author URI:   http://www.99pixels.co.uk
+ Template:     _tk
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         bootstrap 3, responsive-layout, accessibility-ready
+ Text Domain:  wonder-print (_tk child)
+*/
+
+//Import Custom Variables
+@import 'modules/custom-variables';
+
+//Import Bootstrap Variables
+@import 'modules/bootstrap-variables';
+
+//Import Bootstrap
+@import 'vendor/bootstrap';
+
+//Import Components
+@import 'components/_buttons';
+@import 'components/_forms';
+
+
+//Import Layout folder contents
+
+@import 'modules/base';
+@import 'layout/header';
+@import 'layout/branding';
+@import 'layout/footer';
+@import 'layout/logos';
+
+
+//Import page specific content
+@import 'pages/category-page';
+@import 'pages/contact-us';
+@import 'pages/business-category';
+@import 'pages/business-homepage';
+@import 'pages/homepage';
+@import 'pages/product';
+@import 'pages/cart';
+@import 'pages/checkout';
+@import 'pages/custom-prints';

@@ -1,0 +1,23 @@
+/*Form Styling*/
+
+.form-group label {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #c0c0c0;
+	letter-spacing: 0.1em;
+}
+
+.form-control {
+	background-color: #222;
+	border: 1px solid #222;
+	border-radius: 0px;
+	color: #fff;
+	font-size: 1.15em;
+
+
+	&:hover, &:focus {
+		border: 1px solid $stripe-2;
+	}
+}

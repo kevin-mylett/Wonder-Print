@@ -1,0 +1,16 @@
+.review-order {
+	@include make-md-column(6);
+}
+
+/*Paymentsense */
+
+.woocommerce-checkout #payment {
+	@include make-xs-column(12);
+	background: none;
+	border-radius: 0px;
+
+	div.payment_box {
+		background: none;
+		color: #fff;
+	}
+}

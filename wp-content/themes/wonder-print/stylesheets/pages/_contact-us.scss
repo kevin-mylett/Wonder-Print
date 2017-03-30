@@ -1,0 +1,75 @@
+.contact-details {
+	@include make-xs-column(12);
+	@include make-sm-column(5);
+	margin-top: 50px;
+
+		@media (min-width: 768px) {
+			margin-top: 100px;	
+	}
+}
+
+.contact-icon {
+	@include make-xs-column(3);
+	text-align: center;
+
+		.fa {
+			color: $stripe-2;
+			font-size: 28px;
+	}
+}
+
+.contact-info {
+	@include make-xs-column(9);
+	margin-bottom: 40px;
+
+	p {
+		margin: 0px 0px 5px;
+	}
+}
+
+h2.contact-us {
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+
+	.fa-heart-o {
+		color: $stripe-4;
+	}
+}
+
+.contact-social {
+	@include make-xs-column(12);
+	text-align: center;
+	padding-top: 25px;
+	border-top: 1px solid #222;
+
+	.fa {
+		color: #c0c0c0;
+		font-size: 40px;
+		padding: 0px 20px;
+	}
+
+	.fa-twitter:hover {
+		color: $twitter;
+	}
+
+	.fa-facebook:hover {
+		color: $facebook;
+	}
+
+}
+
+.contactform {
+	@include make-sm-column(7);
+	background-color: #111;
+	padding-top: 30px;
+
+	@media (min-width: 768px) {
+		float: right !important;
+	}
+}
+
+span.wpcf7-not-valid-tip {
+	color: $stripe-4;
+}
+

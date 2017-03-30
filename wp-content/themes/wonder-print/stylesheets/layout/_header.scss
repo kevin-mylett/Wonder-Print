@@ -1,0 +1,194 @@
+/*Logo - Homepage Only */
+.logo {
+	@include center-block;
+}
+
+
+/*===Top Bar===*/
+
+.top-bar {
+	background-color: $primary-color;
+    font-size: 1.1em;
+
+    .container{
+    	padding-top: 15px;
+    }
+    .ul {
+    	display: inline;
+    }
+
+    a {
+    	color: #fff;
+    }
+}
+
+.top-content {
+	@include make-row();
+}
+
+.contact-top {
+	@include make-xs-column(5);
+	@include make-sm-column(6);
+}
+
+.social-icons {
+	@extend .list-inline;
+	display: inline;
+
+	li {
+		padding: 0px 1px;
+	}
+
+	li.phone {
+		@extend .visible-xs;
+		@media(max-width:767px) {
+			display: inline-block !important;
+		}
+	}
+}
+
+
+.facebook-circle {color: #3b5998;}
+.twitter-circle {color: #4099FF;}
+.phone-circle {color: #DD3E5D;}
+
+.top-links {
+	@extend .hidden-xs;
+	@extend .list-inline;
+	display: inline;
+	vertical-align: middle;
+	margin-left: 5px;
+	a {
+		margin: 5px;
+	}
+}
+
+.basket-top {
+	@include make-xs-column(7);
+	@include make-sm-column(3);
+	@extend .pull-right;
+
+	.basket{
+		@extend .pull-right;
+
+		a {
+			margin: 5px;
+			font-size: 14px;
+			font-weight: bold;
+			vertical-align: sub;
+			color: #000;
+
+			.fa-shopping-cart {
+				color: #000;
+			}
+		}
+	}
+}
+
+/*===Navigation & Logo ===*/
+
+.alt-container {
+	@extend .container;
+	padding-bottom: 0px;
+}
+
+.site-navigation {
+	@extend .navbar;
+	border: none;
+	margin-bottom: 0px;
+}
+
+.stripes {
+	@include make-xs-column(3);
+	@extend .visible-xs;
+	min-height: inherit;
+	background-image: url(img/stripes7px.png);
+	background-repeat: repeat-y;
+	/*background-position: 15px 50%;*/
+	}
+
+.brand-centered {
+	@media (max-width: $screen-sm-max)  {
+	  display: flex;
+	  justify-content: center;
+	  position: absolute;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	}
+}
+
+.navbar-brand {
+	padding: 0px;
+
+	@media (max-width: $screen-sm-max) {
+		display: flex;
+		align-items: center;
+	}
+	
+	img {
+		height: 100%;
+		padding: 10px;
+		width: auto;
+	}
+}
+
+.navbar-nav > li > a {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.81em;
+	letter-spacing: 0.081em;
+	color: #fff;
+	padding: 40px 14px;
+
+	@media (max-width: $screen-sm-max) {
+		padding: 10px;
+	}
+
+	&:hover, &:focus {
+		background-color: $primary-color;
+	}
+}
+
+.shop-nav > li > a {
+	@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+		padding: 40px 8px;
+	}
+}
+
+.navbar-collapse {
+	border-bottom: 1px solid #222;
+}
+
+.navbar-toggle {
+	@extend .pull-right;
+
+	@media (max-width: $screen-sm-max) {
+		z-index: 1;
+	}
+
+	.icon-bar {
+			background-color: $primary-color;
+			height: 3px;
+		}
+}
+
+
+/*Start of main content*/
+
+.content-wrapper {
+	@include make-xs-column(12);
+	@include make-sm-column(11);
+	@include make-sm-column-push(1);
+
+	@media only screen and (max-width : 420px) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.main-content {
+	@include make-xs-column(12);
+	margin: 30px 0px;
+}
+

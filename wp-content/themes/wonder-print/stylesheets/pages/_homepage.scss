@@ -1,0 +1,85 @@
+
+.home-heading {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.18em;
+	color: #888;
+	font-weight: bold;
+	padding-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+.home-image-wrapper {
+	@include make-xs-column(12);
+	@include make-sm-column(6);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 600px;
+
+	@media (max-width: $screen-xs-max) {
+		min-height: 450px;
+	}
+}
+
+.home-print {
+	background-image:url('img/bedroom-wall-lettering.jpg');
+}
+
+.business-print {
+	background-image:url('img/business-printing.jpg');
+}
+
+.home-text-wrapper {
+	@include make-sm-column(6);
+	display: flex;
+	align-items: center;
+}
+
+.home-wrapper {
+	background-color: #fff;
+}
+
+.intro-text {
+	@include make-sm-column(8);
+	padding: 20px 0px;
+
+	h2 {
+		font-size: 22px;
+
+		&:after {
+			@extend .divider;
+		}
+	}
+}
+
+.home-intro {
+	@include make-sm-column-offset(4);
+	text-align: right;
+	color: #000;
+
+	h2 {
+		color: #222;
+
+		&:after {
+			@extend .divider;
+			background-color: $primary-color;
+			margin-left: 80%;
+		}
+	}
+
+	a {
+		margin-top: 20px;
+		color: #fff;
+		background-color: $primary-color;
+
+		&:hover {
+			background-color: $stripe-4;
+		}
+	}
+}
+
+.site-footer-home {
+	padding-top: 0px;
+}

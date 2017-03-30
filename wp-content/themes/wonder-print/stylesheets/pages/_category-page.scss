@@ -1,0 +1,138 @@
+.shop-category-banner-image {
+	@media (max-width: $screen-xs-max) {
+		margin-top: 10px;
+		padding: 0px;
+	}
+	@include make-xs-column(12);
+	@include make-sm-column(8); 
+}
+
+/*Result Count & Sorting */
+
+.woocommerce .woocommerce-ordering, .woocommerce .woocommerce-result-count {
+	margin: 0 0 3em;
+}
+
+.woocommerce .woocommerce-result-count {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	padding: 5px 0px;
+}
+
+/*Product Sorting */
+
+.woocommerce .woocommerce-ordering .orderby {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	padding: 5px 0;
+}
+
+
+/*Product Listings */
+.woocommerce ul.products li.product {
+	padding: 10px 10px 30px 10px;
+	background-color: #191919;
+	margin: 0 1.9% 3em 1.9%;
+	width: 29.5%;
+	border-bottom: 5px solid #000;
+
+	&:hover {
+		border-bottom: 5px solid $stripe-1;
+	}
+
+		@media (max-width: 768px) {
+		width: 46%;
+	}
+
+	a img {
+		margin: 0 0 2em;
+	}
+
+	.star-rating {
+	margin: 0px auto .6em;
+	line-height: 0.9;
+		
+		span {
+			color: $stripe-2;
+		}
+	}
+
+	.no-rating {
+	text-align: center;
+	color: #222;
+	}
+
+	h3 {
+		text-align: center;
+		font-family: 'Fjalla One', sans-serif;
+		text-transform: uppercase;
+		font-size: 1.25em;
+		letter-spacing: .05em;
+		color: #fff;
+	}
+
+	.price {
+		text-align: center;
+		color: #fff;
+		margin-bottom: 8%;
+		font-size: 1.1em;
+		letter-spacing: .05em;
+	}
+}
+
+/* Pagination */
+.woocommerce nav.woocommerce-pagination ul {
+	border: 1px solid $primary-color;
+
+	li {
+		border-right: 1px solid $primary-color;
+		font-size: 1em;
+
+		a {
+			color: #fff;
+			padding: .5em 1em;
+
+				&:hover {
+					background: $primary-color;
+					color: #fff;
+				}
+		}
+
+		span.current {
+			background: $primary-color;
+			color: #fff;
+			padding: .5em 1em;
+		}
+	}
+}
+
+
+/*Category Description */
+.term-description {
+	text-align: center;
+	margin-top: 40px;
+
+	&:before  {
+		@extend .divider;
+		margin: .8em auto;
+	}
+
+	p {
+		margin: 0 0 15px;
+		line-height: 1.45em;
+		font-size: 1.2em;
+
+	}
+}
+
+
+/*Custom Prints box on shop page*/
+#custom-print-loop {
+	@media (max-width: $screen-xs-max) {
+		width: 96%;
+	}
+	width: 62.5%;
+}

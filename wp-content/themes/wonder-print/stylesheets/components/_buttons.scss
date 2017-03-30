@@ -1,0 +1,125 @@
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	background-color: $stripe-4;
+	border-radius: 0px;
+	border: none;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 1em 5em;
+	letter-spacing: 0.1em;
+	font-size: 0.85em;
+
+	&:hover, &:focus {
+		background-color: darken($stripe-4, 8%);
+		background-color: $primary-color;
+		transition: 0.5s;
+	}
+}
+
+.btn-no-fill {
+	@extend .btn;
+	background-color: transparent;
+	border: 1px solid $primary-color;
+}
+
+// Business Pages
+.btn-contact {
+	@extend .btn;
+	background-color: $stripe-2;
+	width: 100%;
+	font-size: 1em;
+
+	&:hover {
+		background-color: darken($stripe-2, 8%);
+	}
+}
+
+.btn-cta {
+	@extend .btn;
+	background-color: $primary-color;
+	box-shadow: 0px 8px 5px darken($stripe-4, 8%);
+
+	&:hover, &:focus {
+		background-color: darken($primary-color, 10%);
+	}
+}
+
+// WooCommerce
+
+.btn-add-cart-cat {
+	@media screen and (max-width: $screen-xs-max) {
+		font-size: 0.8em;
+	}
+
+	@extend .btn;
+	width: 100%;
+	padding: 1em 0em;
+}
+
+.btn-add-cart-single {
+	@extend .btn;
+	width: 100%;
+	padding: 1.3em 5em;
+}
+
+.btn-woo-notice {
+	@extend .btn-cta;
+	background-color: #000;
+	margin-top: 0px;
+	margin-left: auto;
+	font-size: 0.8em;
+	padding: 0.8em 3em;
+}
+
+.btn-review-toggle {
+	@extend .btn;
+	margin-bottom: 25px;
+}
+
+.btn-review {
+	@extend .btn;
+	width: 100%;
+	font-size: 0.8em;
+	background-color: $stripe-2;
+
+	&:hover {
+		background-color: darken($stripe-2, 12%);
+	}
+}
+
+.btn-customise {
+	@extend .btn-no-fill;
+	@include center-block;
+	font-size: .75em;
+	padding: 1em 2em;
+	margin-top: 0px;
+	margin-bottom: 2em;
+
+	i {
+		margin-right: 10px;
+	}
+}
+
+/* Cart */
+.cart-actions {
+	height: 35px;
+	font-size: 0.75em;
+}
+
+.btn-coupon {
+	@extend .btn-no-fill;
+	@extend .cart-actions;
+	border-color: $stripe-5;
+	padding: 0 2em;
+
+	&:hover, &:focus {
+		background-color: $stripe-5;
+	}
+}
+
+.btn-update-basket {
+	@extend .btn-no-fill;
+	@extend .cart-actions;
+	padding: 0 5em;
+}

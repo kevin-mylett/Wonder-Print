@@ -1,0 +1,64 @@
+
+.custom-process {
+
+	.custom-stage {
+		@include make-sm-column(4);
+		text-align: center;
+		margin: 30px 0px;
+
+		.fa {
+			@include center-block;
+			text-align: center;
+		}
+
+		.stage-heading {
+			@extend h2;
+			display: block;
+			margin-top: 30px;
+			font-size: 1.2em;
+			color: $stripe-2;
+		}
+
+		p {
+			font-size: 1.1em;
+		}
+	}
+}
+
+.custom-intro {
+	text-align: center;
+	margin-bottom: 50px;
+
+	p {
+		margin: 0 0 10px;
+	}
+
+	&:before {
+		@extend .divider;
+		margin: .8em auto;
+	}
+}
+
+.custom-category {
+	@include make-sm-column(6);
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 50px;
+
+	h3 {
+		@extend h2;
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	.btn {
+		width: calc(100% - 30px);
+		position: absolute;
+		bottom: 0px;
+	}
+
+	p {
+		text-align: justify;
+	}
+}
