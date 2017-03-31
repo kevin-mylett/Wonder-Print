@@ -8,10 +8,10 @@
 
 <?php if (is_page(array('contact-us', 'about-us')) ) : ?>
 
-	<?php get_template_part ('/templates/us-header') ?>
+	<?php get_template_part('includes/headers/header', 'us'); ?>
 
 <?php else : ?> 
-<?php get_header('business'); ?>
+	<?php get_template_part('includes/headers/header', 'business'); ?> 
 <?php endif ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
@@ -25,6 +25,5 @@
 		?>
 
 	<?php endwhile; // end of the loop. ?>
-
 
 <?php get_footer('business'); ?>

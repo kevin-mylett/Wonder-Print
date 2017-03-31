@@ -1,10 +1,9 @@
 <?php
 /**
- * The Header for our theme.
+ * The Header for the homepage
  *
- * Displays all of the <head> section and everything up till <div id="main">
+ * Displays all of the <head> section and everything up to opening <main> tag.
  *
- * @package _tk
  */
 ?>
 <!DOCTYPE html>

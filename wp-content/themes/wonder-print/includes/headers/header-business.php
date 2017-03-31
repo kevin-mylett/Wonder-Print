@@ -1,12 +1,12 @@
 <?php
 /**
- * The Header for our theme.
+ * The Header for all the business printing related pages.
  *
- * Displays all of the <head> section and everything up till <div id="main">
+ * Displays all of the <head> section and everything up to opening <section .main-content>
  *
- * @package _tk
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -115,5 +115,3 @@
 				</header><!-- header -->
 
 			<section class="main-content" role="main">
-			
-

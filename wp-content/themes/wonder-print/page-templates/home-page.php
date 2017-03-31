@@ -4,9 +4,7 @@
 
 ?>
 
-
-<?php get_header('home'); ?>
-
+<?php get_template_part('includes/headers/header', 'home'); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -19,6 +17,5 @@
 		?>
 
 	<?php endwhile; // end of the loop. ?>
-
 
 <?php get_footer('home'); ?>

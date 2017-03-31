@@ -4,9 +4,7 @@
 
 ?>
 
-
-<?php get_header('business'); ?>
-
+<?php get_template_part('includes/headers/header', 'business'); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -19,6 +17,5 @@
 		?>
 
 	<?php endwhile; // end of the loop. ?>
-
 
 <?php get_footer('business'); ?>

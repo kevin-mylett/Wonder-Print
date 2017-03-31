@@ -59,7 +59,8 @@ module.exports = function(grunt) {
                         'style.css',
                         '*.php',
                         'woocommerce/*.php',
-                        'templates/*.php'  
+                        'templates/*.php',
+                        'includes/**/*.php'  
                     ]
                 },
                 options: {
