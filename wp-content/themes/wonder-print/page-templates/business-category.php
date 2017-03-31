@@ -1,6 +1,8 @@
 <?php 
 
-/* Template Name: Business Printing Category */ 
+/* Template Name: Business Category 
+*  (Shop Signage, Retail Branding, Glass Manifestation etc.)
+*/ 
 
 ?>
 
