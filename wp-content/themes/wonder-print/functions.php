@@ -109,6 +109,9 @@ add_action( 'init', 'register_my_menus' );
 
 ################################################################################## - WOOCOMMERCE - ######################################################################
 
+//Remove sidebar from all WooCommerce pages
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
 //Add Woocommerce theme support
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
