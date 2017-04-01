@@ -1,6 +1,8 @@
 <?php 
-
-/* Template Name: Main Homepage */ 
+/* 
+*  Template Name: Main Homepage 
+*
+*/ 
 
 ?>
 
@@ -18,4 +20,4 @@
 
 	<?php endwhile; // end of the loop. ?>
 
-<?php get_footer('home'); ?>
+<?php get_template_part('includes/footers/footer', 'home'); ?>

@@ -1,7 +1,7 @@
 <?php 
-
-/* Template Name: Business Homepage */ 
-
+/* 
+*  Template Name: Business Homepage 
+*/ 
 ?>
 
 <?php get_template_part('includes/headers/header', 'business'); ?>
@@ -18,4 +18,4 @@
 
 	<?php endwhile; // end of the loop. ?>
 
-<?php get_footer('business'); ?>
+<?php get_template_part('includes/footers/footer', 'business'); ?>

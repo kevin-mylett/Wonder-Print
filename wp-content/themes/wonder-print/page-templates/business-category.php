@@ -1,9 +1,7 @@
 <?php 
-
 /* Template Name: Business Category 
 *  (Shop Signage, Retail Branding, Glass Manifestation etc.)
 */ 
-
 ?>
 
 <?php if (is_page(array('contact-us', 'about-us')) ) : ?>
@@ -26,4 +24,4 @@
 
 	<?php endwhile; // end of the loop. ?>
 
-<?php get_footer('business'); ?>
+<?php get_template_part('includes/footers/footer', 'business'); ?>

@@ -1,10 +1,9 @@
 <?php
 /**
- * The template for displaying the footer.
+ * The template for displaying the footer on all business printing pages.
  *
- * Contains the closing of the id=main div and all content after
+ * Contains the closing of the section .main-content div and all content after
  *
- * @package _tk
  */
 ?>
 			</section> <!-- close .main-content -->
