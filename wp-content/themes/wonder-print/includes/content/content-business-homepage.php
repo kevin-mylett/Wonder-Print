@@ -91,7 +91,7 @@ $last_word = array_pop($title_as_array);
 		?>
 	</div><!-- .entry-content -->
 
-	<?php get_template_part('templates/clients'); ?>
+	<?php get_template_part('includes/clients'); ?>
 
 
 	<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>

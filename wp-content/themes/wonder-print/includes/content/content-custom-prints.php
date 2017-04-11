@@ -58,13 +58,7 @@ $last_word = array_pop($title_as_array);
 			) );
 		?>
 	</div><!-- .entry-content -->
-	</div>
-
-	<!--<?php if (!is_page (array('contact-us', 'about-us'))) {
-		get_template_part('templates/call-to-action');
-	}
-
-	?>-->
+</div>
 
 	<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->

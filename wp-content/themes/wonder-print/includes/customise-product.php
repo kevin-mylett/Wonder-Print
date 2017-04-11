@@ -1,3 +1,9 @@
+<?php
+/**
+*  Template: Customise button and information on single product pages 
+*/
+?>
+
 <div class="customise">
 	<div class="custom-button" id="show-custom-info">
 		<button class="btn-customise"><i class="fa fa-info-circle" aria-hidden="true"></i>Customise this product</button>

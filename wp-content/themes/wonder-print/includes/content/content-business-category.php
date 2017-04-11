@@ -43,12 +43,12 @@ $last_word = array_pop($title_as_array);
 	</div>
 
 	<?php if (!is_page (array('contact-us', 'about-us'))) {
-		get_template_part('templates/call-to-action');
+		get_template_part('includes/call-to-action');
 	}
 
 	?>
 
-	<?php get_template_part('templates/clients'); ?>
+	<?php get_template_part('includes/clients'); ?>
 
 	<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->
