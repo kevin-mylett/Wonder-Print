@@ -14,7 +14,7 @@
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'content', 'business' ); ?>
+		<?php get_template_part( 'includes/content/content', 'business-category' ); ?>
 
 		<?php
 			// If comments are open or we have at least one comment, load up the comment template

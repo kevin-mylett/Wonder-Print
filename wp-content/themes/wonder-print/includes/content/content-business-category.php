@@ -1,8 +1,8 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * The template used for displaying page content on business category pages
+ * and about-us & contact-us pages.
  *
- * @package _tk
  */
 ?>
 

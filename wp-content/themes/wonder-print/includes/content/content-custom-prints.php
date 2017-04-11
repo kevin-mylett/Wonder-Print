@@ -1,11 +1,10 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * The template used for displaying page content on the custom-prints page.
  *
  * 
  */
 ?>
-
 
 <?php 
 $post_title = get_the_title();

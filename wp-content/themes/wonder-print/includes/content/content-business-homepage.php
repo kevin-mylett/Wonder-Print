@@ -1,11 +1,8 @@
 <?php
-/**
+/*
  * The template used for displaying page content on the business print homepage
- *
- * @package _wonder-print
  */
 ?>
-
 
 <?php 
 $post_title = get_the_title();
