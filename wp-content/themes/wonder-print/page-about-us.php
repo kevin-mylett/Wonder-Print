@@ -1,13 +1,15 @@
 <?php
-/**
- * The template used for displaying page content on business category pages.
- *
- */
+/*
+* Page Template: About Us page
+*/
+
 $post_title = get_the_title();
 $title_as_array = explode(' ', $post_title);
 $last_word = array_pop($title_as_array);
 
 ?>
+
+<?php get_template_part('includes/headers/header', 'us' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
@@ -33,10 +35,10 @@ $last_word = array_pop($title_as_array);
 		</div><!-- .entry-content -->
 	</div><!-- .row -->
 
-	<?php get_template_part('includes/call-to-action'); ?>
-
 	<?php get_template_part('includes/clients'); ?>
 
 	<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
-
+	
 </article><!-- #post-## -->
+
+<?php get_template_part('includes/footers/footer', 'business' ); ?>

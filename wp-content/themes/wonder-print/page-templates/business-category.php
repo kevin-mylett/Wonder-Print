@@ -4,13 +4,8 @@
 */ 
 ?>
 
-<?php if (is_page(array('contact-us', 'about-us')) ) : ?>
 
-	<?php get_template_part('includes/headers/header', 'us'); ?>
-
-<?php else : ?> 
-	<?php get_template_part('includes/headers/header', 'business'); ?> 
-<?php endif ?>
+<?php get_template_part('includes/headers/header', 'business'); ?> 
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
