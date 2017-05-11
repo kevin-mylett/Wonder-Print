@@ -1,8 +1,12 @@
-
+<?php
+/*
+* Page Template for all pages using the 'Default Template'
+*/
+?>
 
 <?php if (is_page(array('terms-and-conditions', 'privacy-policy')) ) {
 
-	get_template_part('templates/us-header');
+	get_template_part('includes/headers/header', 'us');
 
 	} else {
 		get_header();
@@ -24,7 +28,7 @@
 
 <?php if (is_page(array('terms-and-conditions', 'privacy-policy')) ) {
 
-	get_footer('business');
+	get_template_part('includes/footers/footer', 'business');
 
 	} else {
 		get_footer();

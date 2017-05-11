@@ -7836,6 +7836,9 @@ input[type=number]::-webkit-outer-spin-button {
   .woocommerce-checkout #payment div.payment_box {
     background: none;
     color: #fff; }
+    .woocommerce-checkout #payment div.payment_box input.input-text, .woocommerce-checkout #payment div.payment_box textarea, .woocommerce-checkout #payment div.payment_box select {
+      margin: .5em 0;
+      font-size: 1.3em; }
 
 .custom-process .custom-stage {
   position: relative;

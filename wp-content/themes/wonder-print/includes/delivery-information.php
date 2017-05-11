@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php if(( is_product() && has_term( 'wall-stickers', 'product_cat' ) )) : ?>
-<table class="delivery-table">
+  <table class="delivery-table">
     <thead>
       <tr>
         <th>Delivery Method</th>
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php endif; ?>
 
 <?php if(( is_product() && has_term( 'canvas-prints', 'product_cat' ) )) : ?>
-<table class="delivery-table">
+  <table class="delivery-table">
     <thead>
       <tr>
         <th>Delivery Method</th>
@@ -57,10 +57,9 @@ if ( ! defined( 'ABSPATH' ) ) {
   </table>
 <?php endif; ?>
 
-
 <?php if(( is_product() && has_term( 'wedding-prints', 'product_cat' ) ) ) : ?>
 
-<table class="delivery-table">
+  <table class="delivery-table">
     <thead>
       <tr>
         <th>Delivery Method</th>
@@ -83,10 +82,8 @@ if ( ! defined( 'ABSPATH' ) ) {
   </table>
 <?php endif; ?>
 
-
-
 <?php if(( is_product() && has_term( 'vinyl-wallpaper', 'product_cat' ) )) : ?>
-<table class="delivery-table">
+  <table class="delivery-table">
     <thead>
       <tr>
         <th>Delivery Method</th>

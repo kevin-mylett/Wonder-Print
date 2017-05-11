@@ -1,6 +1,6 @@
 <?php 
 
-/* Template Name: Custom Prints Template*/ 
+/* Template Name: Custom Prints Page*/ 
 
 ?>
 
@@ -8,7 +8,7 @@
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part('templates/custom-prints-content'); ?>
+		<?php get_template_part('includes/content/content', 'custom-prints'); ?>
 
 		<?php
 			// If comments are open or we have at least one comment, load up the comment template

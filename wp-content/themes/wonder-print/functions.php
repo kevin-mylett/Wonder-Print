@@ -109,6 +109,9 @@ add_action( 'init', 'register_my_menus' );
 
 ################################################################################## - WOOCOMMERCE - ######################################################################
 
+//Remove sidebar from all WooCommerce pages
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
 //Add Woocommerce theme support
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
@@ -186,9 +189,9 @@ function remove_product_page_skus( $enabled ) {
 add_filter( 'wc_product_sku_enabled', 'remove_product_page_skus' );
 
 //Add 'Customised Product' button
-add_action('woocommerce_after_single_product_summary', 'wp_customise', 5);
-function wp_customise() {
-  get_template_part('templates/customise-product');
+add_action('woocommerce_after_single_product_summary', 'customise_product', 5);
+function customise_product() {
+  get_template_part('includes/customise-product');
 }
 
 //Change additional informatiom tab to 'product options'
@@ -224,7 +227,7 @@ function delivery_tab( $tabs ) {
 
 }
 function delivery_content() {
-    get_template_part('templates/delivery-information');
+    get_template_part('includes/delivery-information');
 }
 
 //Change button class of add-to-card notification

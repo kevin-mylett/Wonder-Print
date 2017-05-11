@@ -2,8 +2,7 @@
 /**
  * The template for displaying the footer on the main homepage.
  *
- * Contains the closing of the id=main div and all content after
- *
+ * Contains the closing of the <main> tag and all content after
  *
  */
 ?>

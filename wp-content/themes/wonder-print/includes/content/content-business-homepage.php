@@ -1,11 +1,8 @@
 <?php
-/**
+/*
  * The template used for displaying page content on the business print homepage
- *
- * @package _wonder-print
  */
 ?>
-
 
 <?php 
 $post_title = get_the_title();
@@ -94,7 +91,7 @@ $last_word = array_pop($title_as_array);
 		?>
 	</div><!-- .entry-content -->
 
-	<?php get_template_part('templates/clients'); ?>
+	<?php get_template_part('includes/clients'); ?>
 
 
 	<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>

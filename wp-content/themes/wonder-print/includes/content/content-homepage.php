@@ -1,8 +1,7 @@
 <?php
 /**
- * The template used for displaying page content on the business print homepage
+ * The template used for displaying page content on the sites hompeage
  *
- * @package _tk
  */
 ?>
 
@@ -32,7 +31,6 @@
         </div>
         <div class="home-image-wrapper home-print"></div>
       </div><!--end of row-->
-    </div>
 
     <div class="entry-content">
     	<?php the_content(); ?>
@@ -44,5 +42,6 @@
     	?>  
     </div><!-- .entry-content -->
 
-  	<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+  	 <?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+    </div><!-- container-fluid -->
   </article><!-- #post-## -->

@@ -1,10 +1,8 @@
 <?php
 /**
- * The template for displaying the footer.
+ * The template for displaying the footer on shop / home printing pages.
  *
- * Contains the closing of the id=main div and all content after
  *
- * @package _tk
  */
 ?>
 		

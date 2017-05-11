@@ -1,12 +1,14 @@
 <?php
 /**
- * The Header for our theme.
+ * The Header for all pages ending in -us. (e.g contact-us, about-us)
  *
- * Displays all of the <head> section and everything up till <div id="main">
+ * Displays all of the <head> section and everything up to <section .main-content>
+ * Uses a generic menu suitable for both business printing and shop pages.
  *
- * @package _tk
  */
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">

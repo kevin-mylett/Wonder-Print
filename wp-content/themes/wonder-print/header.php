@@ -2,9 +2,8 @@
 /**
  * The Header for our theme.
  *
- * Displays all of the <head> section and everything up till <div id="main">
+ * Displays all of the <head> and <header> sections
  *
- * @package _tk
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -119,8 +118,3 @@
 						echo '<section class="main-content" role="main">';
 					}
 					?>
-
-
-			
-			
-

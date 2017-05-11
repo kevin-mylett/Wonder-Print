@@ -1,3 +1,10 @@
+<?php 
+/**
+* Template: Client Logo's 
+* 
+*/
+?>
+
 <div class="row">
 	<div class="our-clients">
 			<h3 class="sub-head">Our Clients</h3>
