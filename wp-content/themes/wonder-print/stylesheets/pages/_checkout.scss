@@ -12,5 +12,10 @@
 	div.payment_box {
 		background: none;
 		color: #fff;
+
+		input.input-text, textarea, select {
+			margin: .5em 0;
+			font-size: 1.3em;
+		}
 	}
 }
