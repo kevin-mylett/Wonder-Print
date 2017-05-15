@@ -7505,7 +7505,8 @@ h3.sub-head {
   font-size: 1.3em;
   margin: 5px 0 30px;
   color: #fff;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  display: inline-block; }
 
 .woocommerce-variation-price {
   margin-top: 10px; }
