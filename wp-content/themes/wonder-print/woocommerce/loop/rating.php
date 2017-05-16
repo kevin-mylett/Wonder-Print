@@ -13,29 +13,22 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.0.0
+ * @version     3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 global $product;
-
 $rating_count = $product->get_rating_count();
 
 if ( get_option( 'woocommerce_enable_review_rating' ) === 'no' )
 	return;
-?>
 
-<?php if ( $rating_html = $product->get_rating_html() ) : ?>
-	<?php echo $rating_html; ?>
-<?php endif; ?>
-
-<?php if ( $rating_count == 0 ) {
-	$rating_html = '-';
-	echo '<div class="no-rating">';
-	echo $rating_html; 
-	echo '</div>';
+if ( $rating_count == 0 ) {
+	echo '<div class="no-rating">-</div>';
+	} else {
+		echo wc_get_rating_html( $product->get_average_rating() );
 	}
 ?>
