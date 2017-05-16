@@ -280,15 +280,15 @@ function jk_hide_category_count() {
 
 /**
 * Add Bootstrap classes to checkout fields 
-* WooCommerce - Modify each individual input type $args defaults /**
+* WooCommerce - Modify each individual input type $args defaults
 * - http://stackoverflow.com/questions/23943791/add-custom-css-class-to-woocommerce-checkout-fields
-/*********************************************************************************************/
+*/
 
 add_filter('woocommerce_form_field_args','wc_form_field_args',10,3);
 
 function wc_form_field_args( $args, $key, $value = null ) {
 
-    // Start field type switch case
+    //Start field type switch case
 
     switch ( $args['type'] ) {
 
