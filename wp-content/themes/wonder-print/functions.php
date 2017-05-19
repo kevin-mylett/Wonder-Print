@@ -404,14 +404,6 @@ function image_sizes_attr($sizes, $size) {
 }
 add_filter('wp_calculate_image_sizes', 'image_sizes_attr', 10 , 2);
 
-// Remove image dimensions. Not required.
-function bootstrap_responsive_images( $html ){
-    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
-    return $html;
-}
-add_filter( 'the_content','bootstrap_responsive_images',10 );
-add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 ); 
-
 
 /**Change dimensions of new default image size (medium_large). Added to wordpress v4.4 as part of introduction
 *	of responsive images. Not visible in frontend UI.
