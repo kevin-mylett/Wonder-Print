@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         concat: {   
             js: {
                 src: [
-                    'js/vendor/jquery/jquery.js', // jQuery js
+                    //'js/vendor/jquery/jquery.js', // jQuery js
                     'js/vendor/bootstrap.js',  // Bootstrap js
                     'js/theme-customs.js', // Wonder-Print theme js
                     'js/google-maps.js'
