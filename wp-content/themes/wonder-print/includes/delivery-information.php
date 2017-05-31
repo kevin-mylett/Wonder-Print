@@ -57,7 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   </table>
 <?php endif; ?>
 
-<?php if(( is_product() && has_term( 'wedding-prints', 'product_cat' ) ) ) : ?>
+<?php if(( is_product() && has_term( 'wedding-signs-stationery', 'product_cat' ) ) ) : ?>
 
   <table class="delivery-table">
     <thead>
