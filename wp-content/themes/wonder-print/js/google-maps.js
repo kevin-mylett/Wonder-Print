@@ -42,10 +42,10 @@ function init_map() {
  
 }
 
-(function(){
-  if(jQuery('body').is('.google-maps')){
+jQuery(function($){
+  if($('body').is('.google-maps')){
     google.maps.event.addDomListener(window, 'load', init_map);
   }
-})(jQuery);
+});
 
 //END OF GOOGLE MAPS
