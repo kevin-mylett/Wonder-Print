@@ -1,6 +1,6 @@
 //***WONDER PRINT THEME JS***//
 
-$(document).ready(function(){
+jQuery(document).ready(function($) {
 
 	$('.twitter-block').delegate('#twitter-widget-0','DOMSubtreeModified propertychange', function() {
 
@@ -99,7 +99,7 @@ jQuery( function( $ ) {
 
 
 //Toggle Add Review Button on Review Tab
-$(document).ready(function(){
+jQuery(document).ready(function($){
    $("#review_form").hide();
    $("#show-review-form").click(function(event){
      $("#review_form").toggle();
@@ -107,7 +107,7 @@ $(document).ready(function(){
  });
 
 //Toggle product customisation info underneath product image
-$(document).ready(function(){
+jQuery(document).ready(function($){
    $("#customise-info").hide();
    $("#show-custom-info").click(function(event){
      $("#customise-info").toggle();

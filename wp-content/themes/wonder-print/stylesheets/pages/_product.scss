@@ -33,6 +33,7 @@
 	margin: 5px 0 30px;
 	color: #fff;
 	letter-spacing: 1px;
+	display: inline-block;
 }
 
 .woocommerce-variation-price {
@@ -192,6 +193,18 @@ margin: 0;
 		}
 	}
 }
+
+/* Product Thumbnails */
+
+.woocommerce div.product div.images .flex-control-thumbs {
+	margin-top: 1em;
+
+	li {
+		width: calc(25% - (1em / 4));
+		margin-right: 1em;
+	}
+}
+
 
 
 

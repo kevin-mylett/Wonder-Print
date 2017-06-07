@@ -42,7 +42,7 @@ function init_map() {
  
 }
 
-$(function(){
+jQuery(function($){
   if($('body').is('.google-maps')){
     google.maps.event.addDomListener(window, 'load', init_map);
   }

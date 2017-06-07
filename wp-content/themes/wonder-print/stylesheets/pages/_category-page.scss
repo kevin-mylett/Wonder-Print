@@ -65,13 +65,14 @@
 	color: #222;
 	}
 
-	h3 {
+	.woocommerce-loop-category__title, .woocommerce-loop-product__title, h3 {
 		text-align: center;
 		font-family: 'Fjalla One', sans-serif;
 		text-transform: uppercase;
 		font-size: 1.25em;
 		letter-spacing: .05em;
 		color: #fff;
+		font-weight: normal;
 	}
 
 	.price {

@@ -116,6 +116,10 @@ remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
+    //Add product gallery support
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 }
 
 /*
@@ -231,15 +235,21 @@ function delivery_content() {
 }
 
 //Change button class of add-to-card notification
-add_filter ( 'wc_add_to_cart_message', 'wc_add_to_cart_message_filter', 10, 2 );
-function wc_add_to_cart_message_filter($message, $product_id = null) {
-    $titles[] = get_the_title( $product_id );
+add_filter( 'wc_add_to_cart_message_html', 'custom_cart_message_button_class', 10, 2 );
+function custom_cart_message_button_class($message, $products) {
+    $count  = 0;
 
-    $titles = array_filter( $titles );
-    $added_text = sprintf( _n( '%s has been added to your cart.', '%s have been added to your cart.', sizeof( $titles ), 'woocommerce' ), wc_format_list_of_items( $titles ) );
+    foreach ( $products as $product_id => $qty ) {
+        $titles[] = ( $qty > 1 ? absint( $qty ) . ' &times; ' : '' ) . sprintf( _x( '&ldquo;%s&rdquo;', 'Item name in quotes', 'woocommerce' ), strip_tags( get_the_title( $product_id ) ) );
+        $count += $qty;
+    }
 
+    $titles     = array_filter( $titles );
+    $added_text = sprintf( _n( '%s has been added to your cart.', '%s have been added to your cart.', $count, 'woocommerce' ), wc_format_list_of_items( $titles ) );
+
+    $titles     = array_filter( $titles );
+    $added_text = sprintf( _n( '%s has been added to your cart.', '%s have been added to your cart.', $count, 'woocommerce' ), wc_format_list_of_items( $titles ) );
     $message = sprintf( '%s<a href="%s" class="btn-woo-notice">%s</a>', esc_html( $added_text ), esc_url( wc_get_page_permalink( 'cart' ) ), esc_html__( 'View Cart', 'woocommerce' ) );
-
     return $message;
 }
 
@@ -276,15 +286,15 @@ function jk_hide_category_count() {
 
 /**
 * Add Bootstrap classes to checkout fields 
-* WooCommerce - Modify each individual input type $args defaults /**
+* WooCommerce - Modify each individual input type $args defaults
 * - http://stackoverflow.com/questions/23943791/add-custom-css-class-to-woocommerce-checkout-fields
-/*********************************************************************************************/
+*/
 
 add_filter('woocommerce_form_field_args','wc_form_field_args',10,3);
 
 function wc_form_field_args( $args, $key, $value = null ) {
 
-    // Start field type switch case
+    //Start field type switch case
 
     switch ( $args['type'] ) {
 
@@ -393,14 +403,6 @@ function image_sizes_attr($sizes, $size) {
         }
 }
 add_filter('wp_calculate_image_sizes', 'image_sizes_attr', 10 , 2);
-
-// Remove image dimensions. Not required.
-function bootstrap_responsive_images( $html ){
-    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
-    return $html;
-}
-add_filter( 'the_content','bootstrap_responsive_images',10 );
-add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 ); 
 
 
 /**Change dimensions of new default image size (medium_large). Added to wordpress v4.4 as part of introduction
