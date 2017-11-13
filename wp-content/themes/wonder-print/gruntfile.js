@@ -66,6 +66,7 @@ module.exports = function(grunt) {
                 options: {
                     watchTask: true,
                     proxy: 'dev.wonder-print',
+                    browser: ["google chrome"]
                 }
             }
         },
